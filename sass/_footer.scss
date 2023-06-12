@@ -1,0 +1,55 @@
+footer{
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    .redes{
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        i{
+            color: white;
+            font-size: 3rem;
+        }
+        .home{
+            &:active{
+                background-color: map-get($map:$colores-pagina , $key:hover );
+            }
+        }
+    }
+}
+.footer_2{
+    height: 10vh;
+    span{
+        font-size: 2rem;
+        color: black;
+    }
+}
+// resposive
+@include lg (){
+    footer{
+        padding: 1rem;
+        .redes{
+            justify-content: center;
+            a{
+                padding: 1rem;
+                margin-right: 3rem;
+                &:hover{
+                    background-color: #C62368;
+                    border-radius: 1rem;
+                }
+            }
+            
+            .home{
+                border: solid 0.2rem #C62368;
+                border-radius: 10%;
+                padding: 5px;
+                margin-left: 10rem;
+                transition: $transition;
+                &:hover{
+                    border-radius: 50%;
+                    background-color:#C62368;
+                }
+            }
+        }
+    }
+}
