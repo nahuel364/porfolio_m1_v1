@@ -39,6 +39,11 @@ titulos: aliceblue,
     justify-content:$j_content;
 }
 // medidas media query
+@mixin sm($sm:360px){
+    @media screen and (max-width:$sm){
+        @content;
+    }
+}
 @mixin md($md:768px){
     @media screen and (min-width:$md){
         @content;

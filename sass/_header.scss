@@ -123,6 +123,26 @@ header{
     }
 }
 // resposive
+    @include sm(){
+        header{
+            .nombre{
+                background-color: #152344;
+            }
+            .menu{
+                .botonera{
+                    .bton_sobre_mi{
+                        width: 95%;
+                }
+                .bton_porfolio{
+                    width: 95%;
+                }
+                .bton_wassap{
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
     @include lg(){
     header{
         background-image: linear-gradient(to right top, #c62368, #646364, #c2acda, #7e99da, #00101c);

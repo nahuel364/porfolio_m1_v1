@@ -85,6 +85,20 @@
     }
 }
 // responsive
+@include sm(){
+   .sobre_mi{
+        .perfil_2{
+        width: 25rem;
+        height: 35rem;
+        }
+    .map{
+        width:90%;
+        iframe{
+            width: 100%;
+        }
+    }
+   } 
+}
 @include lg(){
     .sobre_mi{
         h2{
