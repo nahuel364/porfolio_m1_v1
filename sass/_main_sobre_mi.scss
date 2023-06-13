@@ -4,21 +4,24 @@
     h2{
         width: 100%;
         height: 20vh;
-        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../assets/img/f_secciones.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../assets/img/f_secciones.webp);
         background-size: cover;
         color: #f0f0f3;
         padding:1rem;
         font-size: 3rem;
         text-transform: uppercase;
         letter-spacing: 5px;
-        
+        span{
+            width: 50%;
+            background-color: rgba(0, 0, 0,0.5);
+        }
     }
     .perfil_2{
         width:30rem ;
         height: 40rem;
         margin-top: 5rem;
         border-radius: 100px 6px 100px 6px;
-        background-image: url(../assets/img/sobre_mi.jpg);
+        background-image: url(../assets/img/sobre_mi.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -92,7 +95,7 @@
         height: 35rem;
         }
     .map{
-        width:90%;
+        width:80%;
         iframe{
             width: 100%;
         }
