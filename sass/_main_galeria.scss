@@ -36,7 +36,20 @@ main{
     }
 }
 // responsive
-@media (min-width:992px){
+@include sm(){
+    main{
+        .porfolio{
+            .galeria{
+                a{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@include lg (){
     main{
         .porfolio{
             h3{
