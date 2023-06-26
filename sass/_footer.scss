@@ -47,22 +47,22 @@ footer{
 }
 @include lg (){
     footer{
-        padding: 1rem;
         .redes{
             justify-content: center;
             a{
-                padding: 1rem;
                 margin-right: 3rem;
+                i{
+                    padding: 0.5rem;
+                }
                 &:hover{
                     background-color: #C62368;
-                    border-radius: 1rem;
+                    border-radius: 10%;
                 }
             }
             
             .home{
                 border: solid 0.2rem #C62368;
                 border-radius: 10%;
-                padding: 5px;
                 margin-left: 10rem;
                 transition: $transition;
                 &:hover{
