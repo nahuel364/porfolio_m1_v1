@@ -1,0 +1,106 @@
+#contacto{
+    background-image: linear-gradient(to top, #c62368, #882b72, #482d64, #152344, #00101c);
+    h3{
+        width: 100%;
+        height: 20vh;
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../assets/img/f_secciones.webp);
+        background-size: cover;
+        color: #f0f0f3;
+        padding: 0.5rem;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+    }
+    .text_contacto{
+        width: 80%;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 10px black;
+        p{
+            color: map-get($map:$colores-pagina , $key:titulos);
+            font-family: $tipografia-titulos;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            text-align: left;
+        }
+    }
+    .link_contacto{
+        margin: 2rem;
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            margin: 1rem;
+        }
+        .bton_mail{
+            width: 20rem;
+            // border: solid 2px black;
+            border-radius: 5rem;
+            font-size: 3rem;
+            padding: 0.5rem;
+            background-image: linear-gradient(to right, #04293a, #042e41, #053449, #053950, #053f58, #004d63, #005c6d, #006a74, #278472, #629a65, #a4aa5a, #ecb365);
+            i{
+                margin-right: 4rem;  
+                background-color:map-get($map: $colores-pagina, $key:titulos);
+                padding: 1rem;
+                border-radius: 5rem;
+                box-shadow: inset 1px 1px 10px #657e7e;
+            }
+            span{
+                font-size: 2rem;
+                margin-right:1rem;
+                font-family: $tipografia-general;
+            }
+        }
+        .bton_wassap{
+            width: 20rem;
+            border-radius: 5rem;
+            padding: 0.5rem;
+            background-image: linear-gradient(to right, #04293a, #042e41, #053449, #053950, #053f58, #004d63, #005c6d, #006a74, #278472, #629a65, #a4aa5a, #ecb365);
+            i{
+                margin-right: 4rem;
+                background-color:map-get($map: $colores-pagina, $key:titulos);
+                padding: 1rem;
+                border-radius: 5rem;
+                font-size: 3.2rem;
+                box-shadow: inset 1px 1px 10px #657e7e;
+            }
+            span{
+                font-size: 2rem;
+                margin-right:1rem;
+                font-family: $tipografia-general;
+            }
+        }
+    }
+}
+// RESPONSIVE   
+@include lg (){
+    main{
+        #contacto {
+            padding-bottom: 5rem;
+            .text_contacto{
+                width: 50%;
+                border: solid 1px aliceblue;
+                box-shadow: none;
+              }
+              .cont_link_map{
+                .link_contacto{
+                    a{
+                        .bton_mail{
+                            transition: $transition;
+                            &:hover{
+                              box-shadow: inset 1px 1px 15px #e5992e;
+                            }
+                        }
+                        .bton_wassap{
+                            transition: $transition;
+                            &:hover{
+                              box-shadow: inset 1px 1px 15px #e5992e;
+                            }
+                        }
+                    }
+                }
+              } 
+        }
+      
+    }
+}

@@ -64,7 +64,6 @@ header{
                 }
             }
             .bton_porfolio{
-                border: solid 3rem black;
                 width: 25rem;
                 height: 4rem;
                 margin: 0.5rem;
@@ -84,7 +83,7 @@ header{
                 }
             }
             .bton_contacto{
-                width: 26rem;
+                width: 25rem;
                 height: 4rem;
                 margin: 0.5rem;
                 padding: 1rem;
@@ -128,12 +127,10 @@ header{
                 .bton_porfolio{
                     width: 60vw;
                 }
-                .bton_mail{
+                .bton_contacto{
                     width: 60vw;
                 }
-                .bton_wassap{
-                    width: 60vw;
-                }
+               
             }
         }
     }
@@ -162,14 +159,9 @@ header{
                         background-color: #C62368;
                     }
                 }
-                .bton_mail{
+                .bton_contacto{
                     &:hover{
                         background-color: #C62368;
-                    }
-                }
-                .bton_wassap{
-                    &:hover{
-                        background-color: #126d25;
                     }
                 }
             }
