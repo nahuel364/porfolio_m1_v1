@@ -33,11 +33,10 @@
         }
         .bton_mail{
             width: 20rem;
-            // border: solid 2px black;
             border-radius: 5rem;
             font-size: 3rem;
             padding: 0.5rem;
-            background-image: linear-gradient(to right, #04293a, #042e41, #053449, #053950, #053f58, #004d63, #005c6d, #006a74, #278472, #629a65, #a4aa5a, #ecb365);
+            background-color: rgba(0, 16, 28,0.4);
             i{
                 margin-right: 4rem;  
                 background-color:map-get($map: $colores-pagina, $key:titulos);
@@ -55,7 +54,7 @@
             width: 20rem;
             border-radius: 5rem;
             padding: 0.5rem;
-            background-image: linear-gradient(to right, #04293a, #042e41, #053449, #053950, #053f58, #004d63, #005c6d, #006a74, #278472, #629a65, #a4aa5a, #ecb365);
+            background-color: rgba(0, 16, 28,0.4);
             i{
                 margin-right: 4rem;
                 background-color:map-get($map: $colores-pagina, $key:titulos);
